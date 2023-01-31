@@ -1,0 +1,122 @@
+@font-face {
+  font-family: jaf-herb, serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+  font-family: bebas-neue, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+  font-family: gitan-latin, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  src: url(https://use.typekit.net/dvj8loo.css);
+}
+
+@font-face {
+  font-family: PP regular;
+  src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+}
+
+@font-face {
+  font-family: PP light;
+  src: url(resources/PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+}
+
+@font-face {
+  font-family: PP Sans-regular;
+  src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+}
+
+@font-face {
+  font-family: PP Sans-light;
+  src: url(resources/PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+}
+
+@font-face {
+  font-family: PP NM-Medium;
+  src: url(resources/PPNeueMontreal/PPNeueMontreal-Medium.otf);
+}
+
+body {
+  background-color: #7f7f7f;
+}
+
+.container {
+  
+}
+
+.poly {
+  padding-left: 35px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin-top: 210px;
+}
+
+h2 {
+
+  font-size: 2em;
+    font-family: PP NM-Medium;
+    
+}
+
+.partOneText {
+  text-align: right;
+  justify-content: right;
+  text-align: right;
+  float: right;
+  position: relative;
+  padding: 10px;
+  width: 50%;
+  height: 490px;
+  color: rgb(244, 188, 22);
+}
+
+.backgroundImg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+img {
+  border-radius: 7px;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  width: 200px;
+  top: 60px;
+  left: 100px;
+}
+
+.partTwoText {
+  
+}
+
+.partTwo {
+  text-align: right;
+  justify-content: right;
+  float: right;
+  margin-top: 100px;
+  width: 100%;
+  background-color: rgb(244, 188, 22);
+}
+
+p {
+  font-size: 1em;
+    font-family: PP NM-Medium;
+}
+
