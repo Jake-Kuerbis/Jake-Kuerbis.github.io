@@ -1,0 +1,67 @@
+@font-face {
+    font-family: jaf-herb, serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+  }
+  
+  @font-face {
+    font-family: bebas-neue, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url(https://use.typekit.net/dvj8loo.css);
+  }
+  
+  @font-face {
+    font-family: gitan-latin, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    src: url(https://use.typekit.net/dvj8loo.css);
+  }
+  
+  @font-face {
+    font-family: PP regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SerifRegular.otf);
+  }
+  
+  @font-face {
+    font-family: PP light;
+    src: url(resources/PP\ Fragment\ Trial/PPFragment-SerifLight.otf);
+  }
+  
+  @font-face {
+    font-family: PP Sans-regular;
+    src: url(PP\ Fragment\ Trial/PPFragment-SansRegular.otf);
+  }
+  
+  @font-face {
+    font-family: PP Sans-light;
+    src: url(story\ time/resources/PP\ Fragment\ Trial/PPFragment-SansLight.otf);
+  }
+  
+  @font-face {
+    font-family: PP NM-Medium;
+    src: url(story\ time/resources/PPNeueMontreal/PPNeueMontreal-Medium.otf);
+  }
+
+body {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s ease;
+    
+}
+
+a {
+    font-size: 2em;
+    font-family: PP NM-Medium;
+    padding: 15px;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
