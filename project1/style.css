@@ -64,9 +64,9 @@
 }
 
 .box .content a:hover {
-  color: blue;
+  color: red;
   font-size: 2.25rem;
-  transition: font-size 0.25s ease;
+  transition: font-size 0.35s ease;
 }
 
 @keyframes animate {
