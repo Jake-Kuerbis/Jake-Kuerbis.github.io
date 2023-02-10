@@ -92,9 +92,9 @@ body {
   }
 }
 
-.inClass {
-  animation-duration: 1s;
-  animation-delay: 0.6s;
+.semantics {
+  animation-duration: 0.9s;
+  animation-delay: 0.55s;
   transition: ease-in-out;
   animation-iteration-count: 1;
   animation-name: slidein2;
