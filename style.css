@@ -72,7 +72,7 @@ body {
 }
 
 .storytime {
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-delay: 0.5s;
   transition: ease-in-out;
   animation-iteration-count: 1;
@@ -93,7 +93,7 @@ body {
 }
 
 .semantics {
-  animation-duration: 0.9s;
+  animation-duration: 0.8s;
   animation-delay: 0.55s;
   transition: ease-in-out;
   animation-iteration-count: 1;
@@ -109,6 +109,27 @@ body {
 
   to {
     margin-left: 50px;
+    width: 100%;
+  }
+}
+
+.styles {
+  animation-duration: 0.8s;
+  animation-delay: 0.55s;
+  transition: ease-in-out;
+  animation-iteration-count: 1;
+  animation-name: slidein3;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-left: 0px;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 85px;
     width: 100%;
   }
 }
@@ -155,4 +176,11 @@ body {
   padding-left: 12px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+}
+
+h3 {
+  font-size: 1em;
+  margin-left: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 206, 44);
 }
