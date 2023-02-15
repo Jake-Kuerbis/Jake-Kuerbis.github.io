@@ -1,0 +1,87 @@
+body {
+    background: #000000;
+    transition: background-color 1s ease;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+.notes {
+    padding-right: 50px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.chapters {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 190px;
+    line-height: 41px;
+    /* or 128% */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pages {
+    width: 120px;
+    margin-left: 50px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41px;
+    /* or 128% */
+    color: #FFFFFF;
+}
+
+.layout {
+  
+    display: flex;
+    gap: 35px;
+  
+    justify-content: space-evenly;
+  }
+
+
+
+span {
+    transition: color 0.4s ease;
+}
+
+span:hover {
+    color: rgb(255, 206, 44);
+}
+
+@media only screen and (max-width: 1800px) {
+    .chapters {
+      width: fit-content;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    .chapters {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    .notes {
+        font-size: 26px;
+        line-height: 32px;
+    }
+  }

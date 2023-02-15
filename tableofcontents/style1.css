@@ -1,0 +1,70 @@
+
+body {
+    background: #000000;
+    transition: background-color 1s ease;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+.chapters {
+    width: 1378px;
+    padding-left: 104px;
+    padding-top: 85px;
+    padding-right: 104px;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.notes {
+    width: 400px;
+    padding-bottom: 10px;
+    padding-left: 104px;
+    margin-top: 9.5em;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+span {
+    transition: color 0.4s ease;
+}
+
+span:hover {
+    color: rgb(255, 206, 44);
+}
+
+@media only screen and (max-width: 1800px) {
+    .chapters {
+      width: fit-content;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    .chapters {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    .notes {
+        font-size: 26px;
+        line-height: 32px;
+    }
+  }
