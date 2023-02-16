@@ -10,5 +10,5 @@
         pres[a].style.display = 'none';
         pres[(a + 1)%len].style.display = 'block';
         a = (a + 1) % len;
-    }, 50);
+    }, 45);
 }());
