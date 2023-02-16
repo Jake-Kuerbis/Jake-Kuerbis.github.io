@@ -1,0 +1,77 @@
+html, body {
+    background-color: black;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+    transition: 0.1s ease-in-out;
+}
+
+:any-link:hover {
+    text-decoration: none;
+    color: rgb(255, 206, 44);
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(177, 177, 177);
+}
+
+details {
+    color: white;
+}
+
+p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: white;
+}
+
+meter {
+    border-color: white 1px;
+    border-style: solid;
+    background-color: black;
+    border-radius: 2px;
+}
+
+dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.7rem;
+    padding: 1rem;
+    color: white;
+}
+
+#tierone {
+    color: rgb(255, 74, 74);
+}
+
+.tiertwo {
+    color:rgb(255, 160, 44)
+}
+
+.tierthree {
+    color:rgb(255, 237, 44)
+}
+
+.tierfour {
+    color:rgb(185, 255, 44)
+}
+
+h4 {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h4::after {
+    content: ' (5.8 to 41m)';
+}

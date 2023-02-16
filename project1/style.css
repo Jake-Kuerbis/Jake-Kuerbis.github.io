@@ -12,6 +12,12 @@ canvas {
   display: block;
 }
 
-.text:hover {
+span:hover {
   color: rgb(255, 183, 0);
+}
+
+pre {
+  color: white;
+  margin-left: 12rem;
+  margin-top: 10rem;
 }
