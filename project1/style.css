@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 html, body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   font-family: 'Courier';
   color: #FFF;
   font-size: 12pt;
@@ -12,12 +12,37 @@ canvas {
   display: block;
 }
 
-span:hover {
+.story {
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2rem;
+}
+
+#images:hover {
   color: rgb(255, 183, 0);
 }
 
 pre {
   color: white;
-  margin-left: 12rem;
-  margin-top: 10rem;
+  display: inline-block;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+
 }
+
+#images { 
+  font-size: 9px;
+}
+
+@media (min-width: 845px) {
+  #images {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 600px) {
+	#images { 
+  
+   }
+}
+
+
