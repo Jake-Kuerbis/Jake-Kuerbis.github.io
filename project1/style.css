@@ -15,7 +15,7 @@ canvas {
 .story {
   font-family: 'JetBrains Mono', monospace;
   padding: 2rem;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 #images:hover {
@@ -42,7 +42,7 @@ pre {
 }
 
 
-@media (min-width: 400px) and (max-width: 500px){
+@media (max-width: 400px) {
 	#images { 
     font-size: 6.5px;
    }
