@@ -12,3 +12,5 @@
         a = (a + 1) % len;
     }, 45);
 }());
+
+const wordSpeed = 100;

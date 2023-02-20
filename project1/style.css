@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
 
 html, body {
   background-color: rgb(29, 29, 29);
@@ -15,7 +17,7 @@ canvas {
 .story {
   font-family: 'JetBrains Mono', monospace;
   padding: 2rem;
-  line-height: 28px;
+  line-height: 27px;
 }
 
 #images:hover {
@@ -46,9 +48,6 @@ pre {
 	#images { 
     font-size: 6.5px;
    }
-  .story {
-    font-size: 8px;
-  }
 }
 
 
