@@ -42,13 +42,10 @@ pre {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 	#images { 
     font-size: 6.5px;
    }
-  body {
-    width: 393px;
-  }
 }
 
 
