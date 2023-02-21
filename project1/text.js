@@ -13,4 +13,24 @@
     }, 45);
 }());
 
-const wordSpeed = 100;
+//
+
+  var p = document.getElementById("paragraph"),
+  i;
+
+var spans = document.querySelectorAll('span'),
+  rand =  spans[Math.floor(Math.random() * spans.length)];
+
+for (i = 0; i < (spans.length); i += 1) {
+  rand.classList.add("different-style");
+}
+
+//
+
+new TypeIt("#story", {
+    speed: 15,
+    loop: false,
+    cursor: false,
+    lifeLike: true,
+  })
+  .go();

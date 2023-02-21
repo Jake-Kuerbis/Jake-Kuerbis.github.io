@@ -7,25 +7,21 @@ html, body {
   font-family: 'Courier';
   color: #FFF;
   font-size: 12pt;
+
 }
 
 canvas {
   display: block;
 }
 
-.partOne {
+.story {
   font-family: 'JetBrains Mono', monospace;
   padding: 2rem;
   line-height: 27px;
 }
 
-.title {
-  font-family: 'JetBrains Mono', monospace;
-  padding-left: 2rem;
-  padding-top: 1rem;
-}
 
-a:hover {
+#images:hover {
    color: coral;
 }
 
@@ -38,7 +34,7 @@ pre {
 }
 
 .translation:hover:before {
-  content: "universo";
+  content: "universe";
   border-radius: 2px;
   padding: 0.2rem;
   margin: -0.2rem;
@@ -50,10 +46,6 @@ pre {
   text-decoration: none;
   color: white;
   cursor: pointer;
-}
-
-.next {
-  color: white;
 }
 
 span {
@@ -79,7 +71,8 @@ span {
   font-size: 9px;
   width: fit-content;
   margin: 0 auto;
-  transition: ease 0.3s;
+  color: white;
+  transition: ease 0.3s
 }
 
 @media (min-width: 845px) {
@@ -95,11 +88,5 @@ span {
    }
 }
 
-.bottom {
-  margin-top: 45px;
-  padding: 2rem;
-  margin-bottom: -35em;
-  bottom: 0;
-  position: absolute;
-  font-family: 'JetBrains Mono', monospace;
-}
+
+

@@ -7,16 +7,20 @@
     <title>Project1</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
 
-<div class="story">
-    <p>The universe (which others call the Library) is composed of an indefinite and perhaps infinite number of hexagonal galleries, with vast air shafts between, surrounded by very low railings. From any of the hexagons one can see, interminably, the upper and lower floors. The distribution of the galleries is invariable. Twenty shelves, five long shelves per side, cover all the sides except two; their height, which is the distance from floor to ceiling, scarcely exceeds that of a normal bookcase. One of the free sides leads to a narrow hallway which opens onto another gallery, identical to the first and to all the rest. To the left and right of the hallway there are two very small closets. In the first, one may sleep standing up; in the other, satisfy one's fecal necessities. Also through here passes a spiral stairway, which sinks abysmally and soars upwards to remote distances. In the hallway there is a mirror which faithfully duplicates all appearances. Men usually infer from this mirror that the Library is not infinite (if it were, why this illusory duplication?); I prefer to dream that its polished surfaces represent and promise the infinite... Light is provided by some spherical fruit which bear the name of lamps. There are two, transversally placed, in each hexagon. The light they emit is insufficient, incessant.</p>
+
+
+<div class="story" id="story">
+    <p class="title">The Library of Babel</p>
+    <p id="paragraph" class="partOne">The <a href="langportu.html"><span class="translation"><span class="replies">universe</span></span></a> (<span>which</span> <span>others</span> call the <span>Library</span>) is composed of an indefinite and perhaps <span class="infinite"><span>infinite</span></span> number of hexagonal galleries, with vast air shafts between, surrounded by very low railings. From any of the <span>hexagons</span> one can see, interminably, the upper and lower floors. The distribution of the galleries is invariable. Twenty shelves, five long shelves per side, cover all the sides except two; their height, which is the distance from floor to ceiling, scarcely exceeds that of a normal bookcase. One of the free sides leads to a narrow hallway which opens onto another gallery, identical to the first and to all the rest. To the left and right of the hallway there are two very small closets. In the first, one may sleep standing up; in the other, satisfy one's fecal necessities. Also through here passes a spiral stairway, which sinks abysmally and soars upwards to remote distances. In the hallway there is a mirror which faithfully duplicates all appearances. Men usually infer from this mirror that the Library is not infinite (if it were, why this illusory duplication?); I prefer to dream that its polished surfaces represent and promise the infinite... Light is provided by some spherical fruit which bear the name of lamps. There are two, transversally placed, in each hexagon. The light they emit is insufficient, incessant.</p>
 </div>
   
 <div id="images">
- 
-<pre style="display: none;">
+<a class="next" href="langportu.html">
+<pre style="display: none; ">
     
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;==;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;=________==;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2776,8 +2780,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,_,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
 </pre>
+</a>
 </div>
 
+
+<p class="bottom">A story by Jorge Luis Borges</p>
 
   
 <canvas id="glcanvas"></canvas>  
@@ -2786,6 +2793,9 @@
     <source type="video/mp4" src="0899.mp4">
 </video> -->
 
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
      <script src="text.js"></script> 
+
 </body>
 </html>
