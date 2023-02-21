@@ -23,9 +23,10 @@ canvas {
   font-family: 'JetBrains Mono', monospace;
   padding-left: 2rem;
   padding-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-a:hover {
+.next:hover {
    color: coral;
 }
 
@@ -95,11 +96,26 @@ span {
    }
 }
 
-.bottom {
+
+.footer {
+  display: flex;
+  flex-direction: row;
   margin-top: 45px;
   padding: 2rem;
-  margin-bottom: -35em;
-  bottom: 0;
-  position: absolute;
-  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: -20rem;
+  justify-content: space-evenly;
+  gap: 70%;
+}
+
+.bottom {
+font-family: 'JetBrains Mono', monospace;
+}
+
+.bottomRight {
+  font-family: 'JetBrains Mono', monospace; 
+  padding-right:10px;
+}
+
+.pages:hover {
+  color: coral;
 }

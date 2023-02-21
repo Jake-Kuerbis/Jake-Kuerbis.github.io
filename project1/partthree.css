@@ -7,7 +7,6 @@ html, body {
   font-family: 'Courier';
   color: #FFF;
   font-size: 12pt;
-
 }
 
 canvas {
@@ -15,20 +14,19 @@ canvas {
 }
 
 .partOne {
-    font-family: 'JetBrains Mono', monospace;
-    padding: 2rem;
-    line-height: 27px;
-  }
-  
-  .title {
-    font-family: 'JetBrains Mono', monospace;
-    padding-left: 2rem;
-    padding-top: 1rem;
-    margin-bottom: 3rem;
-  }
+  font-family: 'JetBrains Mono', monospace;
+  padding: 2rem;
+  line-height: 27px;
+}
 
+.title {
+  font-family: 'JetBrains Mono', monospace;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+}
 
-#images:hover {
+.next:hover {
    color: coral;
 }
 
@@ -41,7 +39,7 @@ pre {
 }
 
 .translation:hover:before {
-  content: "universe";
+  content: "uchū";
   border-radius: 2px;
   padding: 0.2rem;
   margin: -0.2rem;
@@ -53,6 +51,10 @@ pre {
   text-decoration: none;
   color: white;
   cursor: pointer;
+}
+
+.next {
+  color: white;
 }
 
 span {
@@ -78,8 +80,7 @@ span {
   font-size: 9px;
   width: fit-content;
   margin: 0 auto;
-  color: white;
-  transition: ease 0.3s
+  transition: ease 0.3s;
 }
 
 @media (min-width: 845px) {
@@ -95,27 +96,26 @@ span {
    }
 }
 
-.footer {
-  display: flex;
-  flex-direction: row;
-  margin-top: 45px;
-  padding: 2rem;
-  margin-bottom: -20rem;
-  justify-content: space-evenly;
-  gap: 70%;
-}
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+    padding: 2rem;
+    margin-bottom: -20rem;
+    justify-content: space-evenly;
+    gap: 70%;
+}
 
 .bottom {
   font-family: 'JetBrains Mono', monospace;
 }
 
 .bottomRight {
-    font-family: 'JetBrains Mono', monospace; 
+    font-family: 'JetBrains Mono', monospace;
     padding-right:10px;
 }
 
 .pages:hover {
     color: coral;
 }
-
