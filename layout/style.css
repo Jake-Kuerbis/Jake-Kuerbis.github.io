@@ -1,0 +1,158 @@
+body {
+    background-color: black;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    gap: 50px 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.firstpiece {
+    display: flex;
+    position: relative;
+    transition: ease 0.3s;
+    background-color: blue;
+    
+}
+
+.green {
+    background-color: rgb(4, 113, 60);
+    width: 265px;
+    height: 320px;
+    z-index: 1;
+}
+
+.grey {
+    background-color: rgb(34, 34, 34);
+    height: 115px;
+    width: 240px;
+    margin-left: 25px;
+    position: absolute;
+    z-index: 2;
+}
+
+.greydown {
+    background-color: rgb(34, 34, 34);
+    height: 285px;
+    width: 145px;
+    margin-left: 25px;
+    position: absolute;
+    z-index: 3;
+}
+
+.secondpiece {
+    display: flex;
+    position: relative;
+    transition: ease 0.3s;
+}
+
+.yellow {
+    width: 390px;
+    height: 250px;
+    background-color: rgb(255, 244, 125);
+    background-size: 130px 130px;
+    background-position: 0 0, 65px 65px;
+    background-image: linear-gradient(45deg, rgb(252, 249, 237) 25%, transparent 25%, transparent 75%, rgb(252, 249, 237) 75%, rgb(252, 249, 237)),
+                    linear-gradient(45deg, rgb(252, 249, 237) 25%, transparent 25%, transparent 75%, rgb(252, 249, 237) 75%, rgb(252, 249, 237));
+    z-index: 1;
+}
+
+.yellowcircle {
+    position: absolute;
+    height: 140px;
+    width: 150px;
+    margin-left: 120px;
+    margin-top: 60px;
+    border-radius: 50%;
+    background-color: rgb(255, 238, 125);
+    z-index: 2;
+}
+
+.thirdpiece {
+    display: flex;
+    position: relative;
+    transition: ease 0.3s;
+}
+
+.whitebackground {
+    height: 270px;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.red {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top: 10px;
+    margin-left: 65px;
+    border-bottom: 140px solid rgb(185, 20, 8);
+    border-left: 330px solid transparent;
+    z-index: 3;
+}
+
+.redbottom {
+    position: absolute;
+    background-color: rgb(185, 20, 8);
+    margin-left: 65px;
+    margin-top: 150px;
+    height: 115px;
+    width: 330px;
+    z-index: 3;
+}
+
+.tan {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top: 185px;
+    margin-left: 5px;
+    border-bottom: 50px solid tan;
+    border-right: 360px solid transparent;
+    z-index: 4;
+}
+
+.tanbottom {
+    position: absolute;
+    background-color: tan;
+    width: 360px;
+    height: 30px;
+    margin-top: 235px;
+    margin-left: 5px;
+    z-index: 4;
+}
+
+.tanbackground {
+    position: absolute;
+    background-color: rgb(224, 212, 195);
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-left: 50px;
+    z-index: 2;
+}
+
+.firstpiece:hover {
+    filter: blur(4px);
+}
+
+.secondpiece:hover {
+    filter: blur(4px)
+}
+
+.thirdpiece:hover {
+    filter: blur(4px)
+}
+
+h2,h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
