@@ -9,9 +9,12 @@ body {
 
 .container {
     display: flex;
-    gap: 50px 1000px;
+    gap: 50px ;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 40vw;
+    margin-right: 40vw;
 }
 
 .firstpiece {
