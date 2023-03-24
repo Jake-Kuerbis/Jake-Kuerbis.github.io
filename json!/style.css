@@ -1,0 +1,51 @@
+@font-face {
+    font-family: ABC Favorit Regular;
+    src: url(resources/ABC\ Favorit/ABCFavorit-Regular-Trial.woff);
+  }
+
+:root {
+	--spacing: 1em;
+}
+
+:any-link {
+	color: cornflowerblue;
+}
+
+body {
+	font-family: ABC Favorit Regular, sans-serif;
+	padding: var(--spacing);
+	padding-bottom: 33vh;
+	background-color: rgb(31, 31, 31);
+}
+
+h1 { font-size: 200%; color: white; font-family: ABC Favorit Regular;}
+
+h2 { font-weight: bold; color: white;}
+
+a { color: blue; }
+
+.subtitle {
+	color: white;
+}
+
+em { font-style: italic }
+
+ul {
+	display: grid;
+	align-items: center;
+    justify-content: center;
+	gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing));
+}
+
+li {
+	display: grid;
+	gap: var(--spacing);
+}
+
+.faded { color: cornflowerblue; }
+
+iframe {
+	height: 30vw;
+	width: 35vw;
+}

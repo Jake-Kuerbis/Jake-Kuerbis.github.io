@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Wilburton, OK",
+		"address": "US-270",
+		"type": "USA Map",
+		"time": 579,
+		"fullPoints" : false,
+		"miles": 3.2,
+		"points": 4969,
+		"state": "Oklahomah",
+		"country": "USA",
+		"link": "https://goo.gl/maps/PFnXKUpd82Hz2HdA8",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679633989427!6m8!1m7!1sRA1TdYhnWBNcUcslyJXW4Q!2m2!1d34.94212410346285!2d-95.17406605759565!3f0!4f0!5f0.7820865974627469' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade",
+		"number": 1
+	},
+	{
+		"title": "Granite Falls, NC",
+		"address": "4798 State Rd 1754",
+		"type": "USA Map",
+		"time": 260,
+		"fullPoints" : false,
+		"miles": 51,
+		"points": 4528,
+		"state": "North Carolina",
+		"country": "USA",
+		"link": "https://goo.gl/maps/9hMfkWdfMDhwSTed9",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679633606005!6m8!1m7!1sfHPLMtz-xgWL5eF5tDaplQ!2m2!1d35.8220106887444!2d-81.39814121390843!3f0!4f0!5f0.7820865974627469' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade",
+		"number": 2
+	},
+	{
+		"title": "Madison, WI",
+		"address": "2230 Pennsylvania Ave",
+		"type": "USA Map",
+		"time": 22,
+		"fullPoints" : false,
+		"miles": 71,
+		"points": 4357,
+		"state": "Wisconsin",
+		"country": "USA",
+		"link": "https://goo.gl/maps/4qMPV7csztvVNeYD6",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679633858249!6m8!1m7!1sJMnR8_Hj2glqTF-UpNMEuA!2m2!1d43.10065141518165!2d-89.35942695770281!3f0!4f0!5f0.7820865974627469' style='order:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade",
+		"number": 3
+	},
+	{
+		"title": "Santa Fe Springs, CA",
+		"address": "Santa Ana Fwy",
+		"type": "USA Map", 
+		"time": 100,
+		"fullPoints" : false,
+		"miles": 2.3,
+		"points": 4978,
+		"state": "California",
+		"country": "USA",
+		"link": "https://goo.gl/maps/u6eRGbeDmJTUbnR47",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679634106235!6m8!1m7!1s-PqfQSsFl9VdXI-8Uo7wdQ!2m2!1d33.93233123308343!2d-118.0902873495619!3f0!4f0!5f0.7820865974627469' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade",
+		"number": 4
+	},
+	{
+		"title": "Dunwoody, GA",
+		"address": "1835 Leiden Ct",
+		"type": "USA Map", 
+		"time": 144,
+		"fullPoints" : false,
+		"miles": 3.3,
+		"points": 4969,
+		"state": "Georgia",
+		"country": "USA",
+		"link": "https://goo.gl/maps/9T4GQXmznUxamKxa7",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679632134979!6m8!1m7!1sDbVwzrvEMtic7eIW1yPPtQ!2m2!1d33.95547162562102!2d-84.31330830268227!3f0!4f0!5f0.7820865974627469' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'",
+		"number": 5
+	}
+]
