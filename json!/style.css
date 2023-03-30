@@ -84,10 +84,19 @@ h1 {
 }
 
 h2 { 
-	
 	font-weight: bold; 
 	color: white;
 }
+
+@-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 5px rgb(209, 231, 85), 0 0 10px rgb(209, 231, 85), 0 0 20px rgb(209, 231, 85), 0 0 30px rgb(209, 231, 85), 0 0 40px rgb(209, 231, 85), 0 0 50px rgb(209, 231, 85), 0 0 60px rgb(209, 231, 85);
+	}
+	
+	to {
+	  text-shadow: 0 0 10px #e8ebdc, 0 0 20px #e8ebdc, 0 0 30px #e8ebdc, 0 0 40px #e8ebdc, 0 0 50px #e8ebdc, 0 0 60px #e8ebdc, 0 0 70px #e8ebdc;
+	}
+  }
 
 a { 
 	color: blue; 
@@ -198,6 +207,8 @@ iframe {
 	height: 18rem;
 	width: 100%;
 	border-radius: 0.25em;
+	border: 3px solid ;
+	box-shadow: 0px 0px 25px 5px cornflowerblue;
 }
 
 
@@ -212,6 +223,7 @@ iframe {
 	background-color: coral;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
+	animation: glow 1s ease-in-out infinite alternate;
 }
 
 .avg {
