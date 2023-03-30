@@ -1,6 +1,6 @@
 @font-face {
-    font-family: ABC Favorit Regular;
-    src: url(resources/ABC\ Favorit/ABCFavorit-Regular-Trial.woff2);
+    font-family: Blob;
+    src: url(../resources/PPMondwest-Regular.otf);
   }
 
 @font-face {
@@ -19,11 +19,11 @@
 .top {
 	padding-bottom: 2.5rem;
 	padding-top: 1rem;
-	background-color: rgb(209, 231, 85);
-	/*background-image: url(../resources/Rainbolt-small.jpg);
+	/*background-color: rgb(209, 231, 85);*/
+	background-image: url(../resources/Rainbolt-small.jpg);
 	background-repeat: no-repeat;
-	background-size: 95vw;
-	background-position-y: center;*/
+	background-size: 95vw 12rem;
+	background-position-y: center;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 	border: solid cornflowerblue;
@@ -64,7 +64,7 @@
   }
 
 body {
-	font-family: ABC Favorit Regular, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: Blob;
 	padding: var(--spacing);
 	padding-bottom: 10vh;
 	background-color: rgb(31, 31, 31);
@@ -73,7 +73,7 @@ body {
 .title {
 	display: flex;
 	flex-wrap: wrap;
-	width: 15rem;
+	width: 18rem;
 	align-items: center;
     justify-content: center;
 	margin: auto;
@@ -82,13 +82,13 @@ body {
 
 h1 { 
 	
-	font-size: 2rem; 
+	font-size: 2.5rem; 
 	color: white; 
-	font-family: ABC Favorit Regular;
+	font-family: serif;
 }
 
 h2 { 
-	font-weight: bold; 
+	font-family: Blob;
 	color: white;
 }
 
@@ -133,7 +133,10 @@ ul {
 
 .boxunder {
 	height: 9rem;
-	background-color: coral;
+	/*background-color: coral;*/
+	background-image: url(../resources/1038860.jpg);
+	background-repeat: no-repeat;
+	background-size: 95vw 10rem;
 }
 
 @media (max-width: 1250px) {
