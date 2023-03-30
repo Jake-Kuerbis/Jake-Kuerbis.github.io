@@ -7,12 +7,88 @@
 		<link href="reset.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script defer src="collection.js"></script>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
 	</head>
 	<body>
+	
+		<div class="top">
+			<div class="gif1">
+				<img class="welcome" src="../resources/welcome.gif">
+			</div>
+			<div class="gif2">
+				<img class="welcome" src="../resources/welcome.gif">
+			</div>
+
+			<div class="title">
+				<h1>Mr. Worldwide</h1>
+				<p class="subtitle"><a href="https://www.geoguessr.com/game/4jiw15cFpbKZjlCz">Geoguesser</a></p>
+			</div>
+		</div>
+	
+			<p class="date" id="dateOne" onclick="myFunction()">March 23rd</p>
 		
-		<h1>Mr. Worldwide</h1>
-		<p class="subtitle"><a href="https://www.geoguessr.com/game/4jiw15cFpbKZjlCz">Geoguesser</a> God</p>
-		<ul id="collection"></ul>
+
+			<ul id="collection" class="marchtwentythird"></ul>
+
+			<ul id="collectionOne" class="boxunder" style="display: none;"></ul>
+
+			<p class="dateTwo" id="dateTwo" onclick="myFunctionTwo()">March 24rd</p>
+			
+			<ul id="mediumcol" class="marchtwentyfourth"></ul>
+
+			<ul id="collectionTwo" class="boxunder" style="display: none;"></ul>
+			<!-- <ul id="largecol"></ul> -->
+
+			<div class="scorecontainer">
+				<div class="score">
+					<h2 class="avg">Avg Score: 4129.2</h2> 
+					<h2 class="states">States Visited: 13</h2>
+				</div>
+			</div>
+
+			<p class="dateThree" id="dateThree" onclick="myFunctionThree()">March 27th</p>
+
+			<ul id="largecol"></ul>
+
+			<ul id="collectionThree" class="boxunder" style="display: none;"></ul>
+			
+		<div id="map-container">
+			<div id='map'></div>
+		</div>
+    <script>
+
+    // The value for 'accessToken' begins with 'pk...'
+    mapboxgl.accessToken = 'pk.eyJ1IjoiamFrZWt1ZXJiaXMiLCJhIjoiY2xmaW56cXd6MDAwcTN2bzRkOXJucTdoMCJ9.0_RnsYkWBy3QiKzsHuUYHA'; 
+    const map = new mapboxgl.Map({
+      container: 'map',
+      // Replace YOUR_STYLE_URL with your style URL.
+      style: 'mapbox://styles/jakekuerbis/clfio4z8r007y01pgma9flyvh', 
+      center: [-94.408717, 41.287169],
+      zoom: 2.5
+    });
+
+    // Code from the next step will go here.
+
+	map.on('click', (event) => {
+  // If the user clicked on one of your markers, get its information.
+  const features = map.queryRenderedFeatures(event.point, {
+    layers: ['symbols'] // replace with your layer name
+	});
+  if (!features.length) {
+    return;
+  }
+  const feature = features[0];
+
+  const popup = new mapboxgl.Popup({ offset: [0, -15] })
+  .setLngLat(feature.geometry.coordinates)
+  .setHTML(
+    `<h3>${feature.properties.place_name}</h3><p>${feature.properties.accuracy}</p>`
+  )
+  .addTo(map);
+});
+    </script>
+
 		
 	</body>
 </html>

@@ -1,11 +1,13 @@
 [
+
 	{
 		"title": "Wilburton, OK",
 		"address": "US-270",
 		"type": "USA Map",
+		"category": "small",
 		"time": 579,
 		"fullPoints" : false,
-		"miles": 3.2,
+		"miles": "3.2 miles",
 		"points": 4969,
 		"state": "Oklahomah",
 		"country": "USA",
@@ -14,12 +16,13 @@
 		"number": 1
 	},
 	{
+		"medium": true,
 		"title": "Granite Falls, NC",
 		"address": "4798 State Rd 1754",
 		"type": "USA Map",
 		"time": 260,
 		"fullPoints" : false,
-		"miles": 51,
+		"miles": "51 miles",
 		"points": 4528,
 		"state": "North Carolina",
 		"country": "USA",
@@ -33,7 +36,7 @@
 		"type": "USA Map",
 		"time": 22,
 		"fullPoints" : false,
-		"miles": 71,
+		"miles": "71 miles",
 		"points": 4357,
 		"state": "Wisconsin",
 		"country": "USA",
@@ -47,7 +50,7 @@
 		"type": "USA Map", 
 		"time": 100,
 		"fullPoints" : false,
-		"miles": 2.3,
+		"miles": "2.3 miles",
 		"points": 4978,
 		"state": "California",
 		"country": "USA",
@@ -61,7 +64,7 @@
 		"type": "USA Map", 
 		"time": 144,
 		"fullPoints" : false,
-		"miles": 3.3,
+		"miles": "3.3 miles",
 		"points": 4969,
 		"state": "Georgia",
 		"country": "USA",
@@ -69,4 +72,5 @@
 		"frame": "https://www.google.com/maps/embed?pb=!4v1679632134979!6m8!1m7!1sDbVwzrvEMtic7eIW1yPPtQ!2m2!1d33.95547162562102!2d-84.31330830268227!3f0!4f0!5f0.7820865974627469' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'",
 		"number": 5
 	}
+
 ]

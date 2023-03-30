@@ -1,0 +1,76 @@
+[
+    {
+		"title": "Daytona Beach, FL",
+		"address": "114 N Beach St",
+		"type": "USA Map", 
+		"time": 80,
+		"fullPoints" : false,
+		"miles": "691 yards",
+		"points": 4996,
+		"state": "Miami",
+		"country": "USA",
+		"link": "https://goo.gl/maps/8WxgrUXTDvwRo8d3A",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680148560744!6m8!1m7!1slcyOW-bZATJv2ZrmhsPL3g!2m2!1d29.21259099161249!2d-81.01960284500099!3f0!4f0!5f0.7820865974627469",
+		"number": 1
+	},
+
+	{
+		"title": "Westford, MA",
+		"address": "I-495",
+		"type": "USA Map", 
+		"time": 220,
+		"fullPoints" : false,
+		"miles": "1.4 miles",
+		"points": 4987,
+		"state": "Massachusetts",
+		"country": "USA",
+		"link": "https://goo.gl/maps/GRUxy5oJCQyWVqEY7",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680148675530!6m8!1m7!1sgEYxqYFa6ZL2CgKsV_zECw!2m2!1d42.57641352684121!2d-71.41540175784547!3f0!4f0!5f0.7820865974627469",
+		"number": 2
+	},
+
+	{
+		"title": "Memphis, TN",
+		"address": "1422 Morehead St",
+		"type": "USA Map", 
+		"time": 43,
+		"fullPoints" : false,
+		"miles": "17 miles",
+		"points": 4835,
+		"state": "Memphis",
+		"country": "USA",
+		"link": "https://goo.gl/maps/VQBzF5B4wHsunTHdA",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680148748918!6m8!1m7!1spM75enkYFDYN3-i9BqW7yw!2m2!1d35.17728736146285!2d-90.02414241692207!3f0!4f0!5f0.7820865974627469",
+		"number": 3
+	},
+
+	{
+		"title": "Fairfield, AL",
+		"address": "448 Forest Dr",
+		"type": "USA Map", 
+		"time": 268,
+		"fullPoints" : false,
+		"miles": "3.3 miles",
+		"points": 4968,
+		"state": "Alabama",
+		"country": "USA",
+		"link": "https://goo.gl/maps/Gs9KsrrF9GYxSke66",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680148844300!6m8!1m7!1szQkA8NgtnIb0Of_u43LM-Q!2m2!1d33.4680209857472!2d-86.92724103339278!3f0!4f0!5f0.7820865974627469",
+		"number": 4
+	},
+
+	{
+		"title": "Modesto, California",
+		"address": "306 Ruberto St",
+		"type": "USA Map", 
+		"time": 134,
+		"fullPoints" : false,
+		"miles": "194 miles",
+		"points": 3436,
+		"state": "California",
+		"country": "USA",
+		"link": "https://goo.gl/maps/N47GfheMRTRvWVCb6",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680148974750!6m8!1m7!1sYhlI5g1TN4x52xttTWBTbg!2m2!1d37.63042237194435!2d-121.0108831534419!3f0!4f0!5f0.7820865974627469",
+		"number": 5
+	}
+]

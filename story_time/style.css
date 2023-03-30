@@ -44,6 +44,11 @@
   src: url(resources/PPNeueMontreal/PPNeueMontreal-Medium.otf);
 }
 
+@font-face {
+  font-family: ABC Favorit Regular;
+  src: url(resources/ABC\ Favorit/ABCFavorit-Regular-Trial.woff2);
+}
+
 body {
   background-color: #7f7f7f;
 }

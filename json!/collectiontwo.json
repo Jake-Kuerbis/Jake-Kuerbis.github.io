@@ -1,0 +1,76 @@
+[
+    {
+		"title": "Torrington, CT",
+		"address": "1166 US-202",
+		"type": "USA Map", 
+		"time": 144,
+		"fullPoints" : false,
+		"miles": "890 yards",
+		"points": 4995,
+		"state": "Connecticut",
+		"country": "USA",
+		"link": "https://goo.gl/maps/85zhvnvxRxRm9J798",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679666772838!6m8!1m7!1s-c7OjkivSJ-xCtyv_RGIIA!2m2!1d41.81539472275296!2d-73.09509368399243!3f44.85247524438852!4f-5.759537091814877!5f0.7820865974627469 style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'",
+		"number": 1
+	},
+
+	{
+		"title": "Cheyenne, WY",
+		"address": "1735 E Pershing Blvd",
+		"type": "USA Map", 
+		"time": 144,
+		"fullPoints" : true,
+		"miles": "15 yards",
+		"points": 5000,
+		"state": "Wyoming",
+		"country": "USA",
+		"link": "https://goo.gl/maps/R8xmoNxYnYXG1L8d9",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679668860307!6m8!1m7!1surT5AHvJX-68JR4aM61zmA!2m2!1d41.14580023460827!2d-104.7985375299546!3f0!4f0!5f0.7820865974627469",
+		"number": 2
+	},
+
+	{
+		"title": "Smithfield, VA",
+		"address": "8345 State Rte 627",
+		"type": "USA Map", 
+		"time": 144,
+		"fullPoints" : false,
+		"miles": "856 miles",
+		"points": 955,
+		"state": "Virginia",
+		"country": "USA",
+		"link": "https://goo.gl/maps/XXYWqBeUin52bRE87",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1679669712593!6m8!1m7!1s5RMI2Vdklwok59jj9ccGjw!2m2!1d37.0265058762226!2d-76.72146838284199!3f0!4f0!5f0.7820865974627469",
+		"number": 3
+	},
+
+	{
+		"title": "Columbiaville, MI",
+		"address": "4564 1st St",
+		"type": "USA Map", 
+		"time": 343,
+		"fullPoints" : false,
+		"miles": "609 miles",
+		"points": 1541,
+		"state": "Michigan",
+		"country": "USA",
+		"link": "https://goo.gl/maps/9Rxk1ijezPzBpS4x5",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680138151418!6m8!1m7!1soND0lK39oQ2cav33gV8tPg!2m2!1d43.15697175528872!2d-83.41074213543894!3f0!4f0!5f0.7820865974627469",
+		"number": 4
+	},
+
+	{
+		"title": "Menifee, CA",
+		"address": "26224 Wheat St",
+		"type": "USA Map", 
+		"time": 410,
+		"fullPoints" : true,
+		"miles": "7 yards",
+		"points": 5000,
+		"state": "California",
+		"country": "USA",
+		"link": "https://goo.gl/maps/cSYLmwn2iFEdcyw7A",
+		"frame": "https://www.google.com/maps/embed?pb=!4v1680138320613!6m8!1m7!1s0WMrpg3rHuc2AfKezcoRsQ!2m2!1d33.73936565157409!2d-117.2193790481479!3f0!4f0!5f0.7820865974627469",
+		"number": 5
+	}
+]
