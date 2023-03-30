@@ -19,7 +19,11 @@
 .top {
 	padding-bottom: 2.5rem;
 	padding-top: 1rem;
-	background-color: rgb(209, 231, 85);
+	/*background-color: rgb(209, 231, 85);*/
+	background-image: url(../resources/Rainbolt-small.jpg);
+	background-repeat: no-repeat;
+	background-size: 95vw;
+	background-position-y: center;
 	margin-left: 2.5rem;
 	margin-right: 2.5rem;
 	border: solid cornflowerblue;
@@ -142,6 +146,16 @@ ul {
 @media (max-width: 800px) {
 	ul {
 		grid-template-columns: repeat(2, 1fr); 
+    	justify-content: left;
+	}
+	.welcome {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	ul {
+		grid-template-columns: repeat(1, 1fr); 
     	justify-content: left;
 	}
 	.welcome {

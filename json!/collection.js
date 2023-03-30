@@ -5,15 +5,14 @@ const renderTime = (mediumcol) => {
 	mediumcol.forEach(itemTwo => {
 		const listItemTwo = document.createElement('li') // Make the `li`
 
-		// You can make each element inside of that…
-		const itemTitleTwo = document.createElement('h2') // Make an `h2`
-		itemTitleTwo.innerHTML = itemTwo.title // Put the JSON title inside
-		listItemTwo.appendChild(itemTitleTwo) // And add it to the `li`!
-
 		const itemImageTwo = document.createElement('iframe') // And an image
 		itemImageTwo.src = itemTwo.frame // Set the `src` attribute from the JSON
 		listItemTwo.appendChild(itemImageTwo) // And add that too
 
+		// You can make each element inside of that…
+		const itemTitleTwo = document.createElement('h2') // Make an `h2`
+		itemTitleTwo.innerHTML = itemTwo.title // Put the JSON title inside
+		listItemTwo.appendChild(itemTitleTwo) // And add it to the `li`!
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
@@ -53,15 +52,14 @@ const renderItems = (collection) => {
 	collection.forEach(item => {
 		const listItem = document.createElement('li') // Make the `li`
 
-		// You can make each element inside of that…
-		const itemTitle = document.createElement('h2') // Make an `h2`
-		itemTitle.innerHTML = item.title // Put the JSON title inside
-		listItem.appendChild(itemTitle) // And add it to the `li`!
-
 		const itemImage = document.createElement('iframe') // And an image
 		itemImage.src = item.frame // Set the `src` attribute from the JSON
 		listItem.appendChild(itemImage) // And add that too
 
+		// You can make each element inside of that…
+		const itemTitle = document.createElement('h2') // Make an `h2`
+		itemTitle.innerHTML = item.title // Put the JSON title inside
+		listItem.appendChild(itemTitle) // And add it to the `li`!
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
@@ -96,14 +94,15 @@ const renderItemsThree = (largecol) => {
 		const listItemThree = document.createElement('li') // Make the `li`
 
 		// You can make each element inside of that…
-		const itemTitleThree = document.createElement('h2') // Make an `h2`
-		itemTitleThree.innerHTML = itemThree.title // Put the JSON title inside
-		listItemThree.appendChild(itemTitleThree) // And add it to the `li`!
+		 // And add it to the `li`!
 
 		const itemImageThree = document.createElement('iframe') // And an image
 		itemImageThree.src = itemThree.frame // Set the `src` attribute from the JSON
 		listItemThree.appendChild(itemImageThree) // And add that too
 
+		const itemTitleThree = document.createElement('h2') // Make an `h2`
+		itemTitleThree.innerHTML = itemThree.title // Put the JSON title inside
+		listItemThree.appendChild(itemTitleThree)
 
 		// This can get annoying, so we can use “template literals” instead
 		const itemDetails =
