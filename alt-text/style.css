@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Blob;
+    src: url(../resources/ABC\ Favorit/ABCFavorit-Regular-trail.woff);
+  }
+
 img {
     justify-content: center;
     align-items: center;
@@ -5,4 +10,9 @@ img {
     margin: 0 auto;
     width: 20rem;
     padding: 1rem;
+}
+
+h2 {
+    padding: 1rem;
+    font-family: sans-serif;
 }
