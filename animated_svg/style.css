@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(-2deg);
+    }}
+
+@keyframes colorChange {
+    0%, 100%{
+        fill: #fce621;
+    }
+    50% {
+        fill: #c1e61e;
+    }}
+
+.cls-1 {
+    animation: swing ease-in-out 1s infinite, colorChange ease-in-out 5s infinite alternate;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.firstpiece {
+    display: flex;
+    position: relative;
+    transition: ease 0.3s;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+img {
+    width: 63vw;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    padding: 6rem;
+}
+
+svg {
+    width: 63vw;
+    margin-left: 20vw;
+    justify-content: center;
+    display: flex;
+    padding: 6rem;
+
+}
