@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Blob;
+    src: url(../resources/ABC\ Favorit/ABCFavorit-Regular-Trial.woff);
+  }
+
+@font-face {
+	font-family: PP NM-Medium;
+	src: url(resources/PPNeueMontreal/PPNeueMontreal-Medium.otf);
+}
+
+body {
+    background-color: rgb(55, 55, 55);
+}
+
+:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+.i {
+    font-style: italic;
+    color: rgb(127, 218, 15);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.i:hover {
+    color: rgb(210, 220, 188);
+}
+
+h2 { 
+	align-content: center;
+    justify-content: center;
+	font-size: 2vw; 
+	color: white; 
+	font-family: Blob;
+}
+
+a {
+    display: flex;
+	align-content: center;
+    justify-content: center;
+	font-size: 2vw; 
+	color: white; 
+	font-family: Blob;
+    border: 2px solid rgb(127, 218, 15);
+    border-radius: 0.2rem;
+}
+
+.sticky {
+    padding: 1rem;
+    background-color: rgb(26, 159, 133);
+    position: -webkit-sticky;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas:
+        "header"
+        
+        "aside"
+        "footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(210, 220, 188);
+    align-content: center;
+    justify-content: center;
+	font-size: 2vw; 
+	color: rgb(255, 255, 255); 
+	font-family: Blob;
+    text-align: center;
+    border: 2px solid rgb(127, 218, 15);
+    border-radius: 0.2rem;
+    margin-top: 0.5rem;
+    padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+div {
+    padding: 1rem;
+
+}
+
+img {
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid rgb(127, 218, 15);
+    border-radius: 0.2rem;
+    object-fit: cover;
+}
+
+  
+p {
+    color: rgb(255, 255, 255); 
+	font-family: Blob;
+    background-color: rgb(95, 143, 233);
+    border: 2px solid rgb(127, 218, 15);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven {
+    border: 2px solid rgb(233, 127, 95);
+}
+
+
+
+@media (max-width: 1000px) {
+	main {
+		grid-template-columns: repeat(2, 1fr); 
+
+	}
+    p {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: transparent;
+    padding: 2rem;
+
+}
