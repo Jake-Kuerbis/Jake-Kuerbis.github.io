@@ -51,6 +51,7 @@ a {
     padding: 1rem;
     background-color: rgb(26, 159, 133);
     position: -webkit-sticky;
+    position: sticky;
     margin-left: 2rem;
     margin-right: 2rem;
     top: 1rem;
