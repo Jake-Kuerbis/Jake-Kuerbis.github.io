@@ -120,8 +120,8 @@ h2 {
 p {
     font-size: 0.85rem; 
 	color: rgb(157, 157, 157); 
-	font-family: blob;
-    mix-blend-mode:screen;
+	font-family: Blob;
+    mix-blend-mode: screen;
     padding: 1rem;
 }
 
