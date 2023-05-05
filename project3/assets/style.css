@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: Favorit;
+    src: url(../assets/ABCFavorit-Light-Trial.otf);
+}
+
+@font-face {
     font-family: gtf;
     src: url(../resources/GTFAgenturTRIAL-Regular.otf);
 }
@@ -13,51 +18,126 @@
 }
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(27, 26, 24);
+    /*overflow: hidden; */
 }
 
 :any-link {
     text-decoration: none;
-    color: white;
+    color: white; 
 }
 
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
-    flex-direction: column;
     margin: auto;
     margin-top: 4rem;
-    
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 2rem; 
 }
+
+
 
 
 #graph { 
     --total--data: calc(var(--color--gray) + var(--color--orange) + var(--color--red));
-    
+    display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 2fr); 
-	grid-template-rows: repeat(1, 2fr); 
-	gap: 4rem;
-	font-size: 1rem; 
-	color: white; 
-	font-family: Blob;
+    grid-template-columns: repeat(3, 1fr); 
+	grid-template-rows: repeat(2, 2fr); 
+} 
+
+#graphTwo { 
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); 
+	grid-template-rows: repeat(2, 2fr); 
+    z-index: -1;
+    position: absolute;
+} 
+
+ul {
+    justify-content: center;
 }
 
 li {
     padding: 1rem;
-    margin: 1rem;
+    width: 16rem;
+    margin: auto;
+    justify-content: center;
+}
+
+@media (min-width: 1300px) {
+    li {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    li {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    li {
+        width: 12rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .p {
+        opacity: 0%;
+    }
 }
 
 h1 {
-    margin-top: 4rem;
+    top: 1rem;
     margin-left: 2rem;
-    font-size: 1.25rem; 
+    font-size: 1.5rem; 
 	color: white; 
-	font-family: Blob;
+    text-align: center;
+	font-family: Favorit;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+h2 {
+    
+    font-size: 0.75rem; 
+	color: white; 
+	font-family: Favorit;
+}
+
+.p {
+    color: rgb(88, 88, 88);
+    text-align: right;
+    mix-blend-mode: normal;
+}
+
+
+p {
+    font-size: 0.85rem; 
+	color: rgb(157, 157, 157); 
+	font-family: blob;
+    mix-blend-mode:screen;
+    padding: 1rem;
+}
+
+p:hover {
+    background-color: papayawhip;
+}
+
+.p:hover {
+    background-color: transparent;
+}
+
+.bottom-infoClick {
+    text-align: right;
+    width: 25vw;
+    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .gray {
@@ -73,3 +153,179 @@ h1 {
 li.gray { width: calc(var(--color--gray) / var(--total--data) * 100%); }
 li.orange { width: calc(var(--color--orange) / var(--total--data) * 100%); }
 li.red { width: calc(var(--color--red) / var(--total--data) * 100%); }
+
+.containerTwo {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4rem;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+   
+}
+
+.hoverContainer {
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    margin: auto;
+    
+}
+
+.hoverContainerClick {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: left;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    transition: ease-in-out 0.1s;
+}
+
+.hoverContainerClick:hover {
+    background-color: rgb(128, 172, 213);
+    transition: ease-in-out 0.2s;
+}
+
+.hoverContainerOne {
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    margin: auto;
+    height: 15rem;
+   
+}
+
+.hoverContainerTwo {
+
+    display: grid;
+    cursor: pointer;
+    justify-content: center;
+    height: 15rem;
+}
+
+.hoverContainerFour {
+    position: relative;
+    display: grid;
+    cursor: pointer;
+    justify-content: center;
+    height: 15rem;
+}
+
+.beachOne {
+    justify-content: center;
+    margin: auto;
+    width: 25rem;
+}
+
+.wolfesPond {
+
+}
+
+.ManhattanBeach {
+    height: auto;
+    cursor: pointer;
+   
+}
+
+.ManhattanBeachClick {
+    height: auto;
+    cursor: pointer;
+    width: 25rem;
+    
+}
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: auto;
+    justify-content: center;
+
+    transition: ease-in-out 0.2s;
+}
+
+.test:hover {
+    background-color: rgb(134, 131, 125);
+    transition: ease-in-out 0.2s;
+}
+
+.ManhattanBeachHover:hover {
+    opacity: 100%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.ManhattanBeachHoverClick:hover {
+    opacity: 100%;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.ManhattanBeachHoverClick {
+    position: absolute;
+    opacity: 0%;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+    width: 25rem;
+}
+
+.ManhattanBeachHover {
+    position: absolute;
+    opacity: 0%;
+    transition: ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.One {
+    background-image: url(../assets/MANHATTAN\ BEACH.png);
+	background-repeat: no-repeat;
+	
+	
+    background-color: antiquewhite;
+    background-size: contain;
+}
+
+@media (max-width: 800px) {
+    .containerTwo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1150px) {
+    #background_vidd {
+        top: 6rem;
+        justify-content: center;
+        margin: auto;
+        pointer-events: none;
+    }}
+    
+    
+    #background_vidd img {
+        
+        
+        
+        
+        
+    }
+
+#background_vidd {
+    
+    position: absolute;
+    margin: auto;
+    justify-content: center; 
+}
+
+
+ .absolute_container {
+    top: 2rem;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: -3;
+    justify-content: center;
+    margin: auto;
+ }
