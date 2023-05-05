@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Blob;
+    src: url(../resources/PPMondwest-Regular.otf);
+  }
+
+@font-face {
+	font-family: PP NM-Medium;
+	src: url(../resources/PPNeueMontreal/PPNeueMontreal-Medium.otf);
+}
+
+:root {
+	--spacing: 1em;
+}
+
+:any-link {
+	color: cornflowerblue;
+}
+
+.top {
+	padding-bottom: 2.5rem;
+	padding-top: 1rem;
+	/*background-color: rgb(209, 231, 85);*/
+	/*background-image: url(../resources/Rainbolt-small.jpg);*/
+    background-image: url(../documenting/assets/rio_christ_vr_01_big.jpg);
+	background-repeat: no-repeat;
+	background-size: 95vw 12rem;
+	background-position-y: center;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	border: solid cornflowerblue;
+}
+
+.gif1 {
+	justify-content: right;
+	display: flex;
+	margin-right: 3rem;
+}
+
+.gif2 {
+	justify-content: left;
+	display: flex;
+	margin-left: 3rem;
+}
+
+.welcome {
+	position: absolute;
+	width: 10rem;
+	height: auto;
+}
+
+#map-container {
+	position: relative;
+    height: 30rem;
+	margin: auto;
+	margin-top: 3rem;
+}
+
+#map { 
+	border: cornflowerblue solid;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	position: relative;
+    height: inherit;
+    width: inherit;
+  }
+
+body {
+	font-family: Blob;
+	padding: var(--spacing);
+	padding-bottom: 10vh;
+	background-color: rgb(233, 233, 233);
+}
+
+.title {
+	display: flex;
+	flex-wrap: wrap;
+	width: 30rem;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+	margin: auto;
+	margin-top: 1rem;
+
+}
+
+h1 { 
+	font-size: 2.5rem; 
+	color: rgb(28, 28, 28); 
+	font-family:  PP NM-Medium;
+}
+
+h2 { 
+	font-family: Blob;
+	color: white;
+}
+
+@-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 5px rgb(209, 231, 85), 0 0 10px rgb(209, 231, 85), 0 0 20px rgb(209, 231, 85), 0 0 30px rgb(209, 231, 85), 0 0 40px rgb(209, 231, 85), 0 0 50px rgb(209, 231, 85), 0 0 60px rgb(209, 231, 85);
+	}
+	
+	to {
+	  text-shadow: 0 0 10px #e8ebdc, 0 0 20px #e8ebdc, 0 0 30px #e8ebdc, 0 0 40px #e8ebdc, 0 0 50px #e8ebdc, 0 0 60px #e8ebdc, 0 0 70px #e8ebdc;
+	}
+  }
+
+a { 
+	color: blue; 
+}
+
+.subtitle {
+	color: white;
+	font-size: 1.5rem;
+}
+
+em { font-style: italic }
+
+ul {
+	display: grid;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(5, 1fr); 
+	grid-template-rows: repeat(1, 2fr); 
+	gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing));
+	/*background-color: rgb(255, 188, 80);*/
+	padding: 3rem;
+	border: solid rgb(209, 231, 85);
+	background-color: rgb(93, 93, 93);
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+}
+
+
+.boxunder {
+	height: 9rem;
+	/*background-color: coral;*/
+	background-image: url(../resources/1038860.jpg);
+	background-repeat: no-repeat;
+	background-size: 95vw 10rem;
+}
+
+@media (max-width: 1250px) {
+	ul {
+		grid-template-columns: repeat(3, 1fr); 
+    	justify-content: left;
+	}
+}
+
+@media (max-width: 1000px) {
+    .title {
+        width: 20rem;
+    }
+
+    .top {
+        
+        background-size: 100%;
+    }
+
+    .welcome {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	ul {
+		grid-template-columns: repeat(2, 1fr); 
+    	justify-content: left;
+	}
+
+}
+
+@media (max-width: 600px) {
+	ul {
+		grid-template-columns: repeat(1, 1fr); 
+    	justify-content: left;
+	}
+	.welcome {
+		opacity: 0;
+	}
+}
+
+li {
+	display: grid;
+	gap: var(--spacing);
+	color: rgb(209, 231, 85);
+}
+
+
+.date {
+	color: white;
+	position: absolute;
+	margin-top: 3rem;
+	margin-left: 5.4rem;
+	cursor: pointer;
+	padding: 0.3rem;
+	border-radius: 0.6rem;
+	background-color: rgb(209, 231, 85);
+}
+
+.dateTwo {
+	color: white;
+	position: absolute;
+	margin-top: 3rem;
+	margin-left: 5.4rem;
+	cursor: pointer;
+	padding: 0.3rem;
+	border-radius: 0.6rem;
+	background-color: rgb(209, 231, 85);
+}
+
+.dateThree {
+	color: white;
+	position: absolute;
+	margin-top: 3rem;
+	margin-left: 5.4rem;
+	cursor: pointer;
+	padding: 0.3rem;
+	border-radius: 0.6rem;
+	background-color: rgb(209, 231, 85);
+}
+
+.date:hover {
+	background-color: cornflowerblue;
+}
+
+.dateTwo:hover {
+	background-color: cornflowerblue;
+}
+
+.dateThree:hover {
+	background-color: cornflowerblue;
+}
+
+.faded { color: cornflowerblue; }
+
+iframe {
+	height: 18rem;
+	width: 100%;
+	border-radius: 0.25em;
+	border: 3px solid ;
+	box-shadow: 0px 0px 25px 5px cornflowerblue;
+}
+
+
+.score {
+	margin-top: 3rem;
+	display: grid;
+	align-items: center;
+    justify-content: center;
+	flex-wrap: wrap;
+	grid-template-columns: repeat(2, 1fr); 
+	height: 5rem;
+	background-color: coral;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+.avg {
+	justify-content: left;
+	margin-left: 3rem;
+}
