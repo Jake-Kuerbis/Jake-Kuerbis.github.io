@@ -223,9 +223,7 @@ li.red { width: calc(var(--color--red) / var(--total--data) * 100%); }
     width: 25rem;
 }
 
-.wolfesPond {
 
-}
 
 .ManhattanBeach {
     height: auto;
@@ -305,13 +303,14 @@ li.red { width: calc(var(--color--red) / var(--total--data) * 100%); }
     }}
     
     
-    #background_vidd img {
+ /*   #background_vidd img {
         
         
         
         
         
     }
+*/
 
 #background_vidd {
     
