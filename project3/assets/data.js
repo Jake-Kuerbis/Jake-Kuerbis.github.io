@@ -30,6 +30,7 @@ console.log('---------------- NEW STUFF ------------------')
 const dataUrl = 'https://data.cityofnewyork.us/resource/2xir-kwzz.json'
 const graph = document.querySelector('#graph')
 const main = document.querySelector('main')
+const dropdown = document.querySelector('#shift') 
 
 let sampleData = []
 
@@ -59,7 +60,7 @@ const parseData = (data) => {
 
         
 
-        if (sample.beach_name = 'beach_name', sample.sample_id = 'sample_id',  sample.enterococci_results = 'enterococci_results' && sample.sample_location == 'Center') {
+        if (sample.beach_name = 'beach_name', sample.sample_id = 'sample_id',  sample.enterococci_results = 'enterococci_results', sample.sample_location = 'sample_location') {
             beachName++
             sampleID++
             sampleLocation++
@@ -86,11 +87,24 @@ const parseData = (data) => {
     graph.style.setProperty('--color--red', sampleLocation)
 }
 
+dropdown.oninput = () => {
+	// Filter the locally-copied data
+	const dataCenter = localData.filter(sample => sample.sample_location == 'Center')
+    const dataLeft = localData.filter(sample => sample.sample_location == 'Left')
+
+	// Parse either set depending on the dropdown value
+	if (dropdown.value == 'Center') parseData(dataCenter)
+    else if (dropdown.value == 'Left') parseData(dataLeft)
+	else parseData(localData) // Send the whole, unfiltered dataset
+}
+
+
 
 fetch(dataUrl + '?$limit=150')
     .then(response => response.json())
     .then(data => {
-        parseData(data)
+        localData = data
+        parseData(localData)
         //console.log(data)
     })
 

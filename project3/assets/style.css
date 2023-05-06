@@ -66,6 +66,13 @@ li {
     width: 16rem;
     margin: auto;
     justify-content: center;
+    transition: grid-column 1s linear;
+
+    grid-column: span 1;
+}
+
+li.open {
+    grid-column: span 2;
 }
 
 @media (min-width: 1300px) {
