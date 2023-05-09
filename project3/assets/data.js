@@ -32,6 +32,10 @@ const graph = document.querySelector('#graph')
 const main = document.querySelector('main')
 const dropdown = document.querySelector('#shift') 
 
+
+//const paragraph = document.querySelector('p')
+//paragraph.className = "newStyle";
+
 let sampleData = []
 
 const parseData = (data) => {
@@ -41,6 +45,7 @@ const parseData = (data) => {
     let sampleLocation = 0
     let turbidity = 0
     let date = '092022'
+    let center = 0
 
 
     data.forEach(sample => {
@@ -74,37 +79,39 @@ const parseData = (data) => {
 
     })
 
+    
+
     console.log('beach name: ' + beachName)
     console.log('sample id: ' + sampleID)
     console.log('sample location: ' + sampleLocation)
 
-    document.getElementById('gray').innerHTML = 'Beach Name: ' + beachName;
-    document.getElementById('orange').innerHTML = 'Sample ID: ' + sampleID;
-    document.getElementById('red').innerHTML = 'Sample Location: ' + sampleLocation;
+    //document.getElementById('gray').innerHTML = 'Beach Name: ' + beachName;
+    //document.getElementById('orange').innerHTML = 'Sample ID: ' + sampleID;
+    //document.getElementById('red').innerHTML = 'Sample Location: ' + sampleLocation;
 
-    graph.style.setProperty('--color--gray', beachName)
-    graph.style.setProperty('--color--orange', sampleID)
-    graph.style.setProperty('--color--red', sampleLocation)
+    //paragraph.style.setProperty('--color--gray', beachName)
+    //graph.style.setProperty('--color--orange', sampleID)
+    //graph.style.setProperty('--color--red', sampleLocation)
 }
 
-dropdown.oninput = () => {
+//dropdown.oninput = () => {
 	// Filter the locally-copied data
-	const dataCenter = localData.filter(sample => sample.sample_location == 'Center')
-    const dataLeft = localData.filter(sample => sample.sample_location == 'Left')
+	// const dataCenter = localData.filter(sample => sample.sample_location == 'Center')
+    //const dataLeft = localData.filter(sample => sample.sample_location == 'Left')
 
 	// Parse either set depending on the dropdown value
-	if (dropdown.value == 'Center') parseData(dataCenter)
-    else if (dropdown.value == 'Left') parseData(dataLeft)
-	else parseData(localData) // Send the whole, unfiltered dataset
-}
+	//if (dropdown.value == 'Center') parseData(dataCenter)
+    //else if (dropdown.value == 'Left') parseData(dataLeft)
+	//else parseData(localData) // Send the whole, unfiltered dataset
+//}
 
 
 
 fetch(dataUrl + '?$limit=150')
     .then(response => response.json())
     .then(data => {
-        localData = data
-        parseData(localData)
+        //localData = data
+        parseData(data)
         //console.log(data)
     })
 

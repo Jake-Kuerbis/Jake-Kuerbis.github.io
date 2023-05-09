@@ -15,6 +15,7 @@
 
 :root {
 	--spacing: 1em;
+    
 }
 
 body {
@@ -67,7 +68,7 @@ li {
     margin: auto;
     justify-content: center;
     transition: grid-column 1s linear;
-
+    
     grid-column: span 1;
 }
 
@@ -130,6 +131,7 @@ p {
 	font-family: Blob;
     mix-blend-mode: screen;
     padding: 1rem;
+    text-align: justify;
 }
 
 p:hover {
@@ -147,8 +149,8 @@ p:hover {
     margin-bottom: 2rem;
 }
 
-.gray {
-    background-color: gray;
+.newStyle {
+    color: rgb(79, 135, 71);
 }
 .orange {
     background-color: rgb(226, 156, 63);
@@ -156,10 +158,6 @@ p:hover {
 .red {
     background-color: rgb(205, 56, 33);
 }
-
-li.gray { width: calc(var(--color--gray) / var(--total--data) * 100%); }
-li.orange { width: calc(var(--color--orange) / var(--total--data) * 100%); }
-li.red { width: calc(var(--color--red) / var(--total--data) * 100%); }
 
 .containerTwo {
     display: grid;

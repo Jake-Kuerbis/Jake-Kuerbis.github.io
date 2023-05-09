@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Data Project v2</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="../project 3.1/assets/data.js"></script>
+</head>
+<body>
+    <main>
+        <div class="background_vid">
+            <div class="vid" style="display: none;"></div>
+        </div>
+
+        <div class="imageRight">
+            
+            <img style="display: none;" class="hoverPreview" src="../project 3.1/assets/Resources/MANHATTAN BEACH.png">
+        </div>
+
+        <div class="imageTop">
+            
+            <img style="display: none;" class="hoverPreviewTwo" src="../project 3.1/assets/Resources/MANHATTAN BEACH.png">
+        </div>
+
+        <div class="absolute_container">
+            <div id="background_vidd">
+                <img class="slideshow" style="display: none;" src="../project3/assets/Resources/c2_MANHATTAN BEACH.png">
+                <img class="slideshow" style="display: none;" src="../project3/assets/Resources/c2_Screenshot 2023-04-27 at 8.53.07 PM.png">
+                <img class="slideshow" style="display: none;" src="../project3/assets/Resources/c2_WOLFE'S POND PARK.png">
+            </div>
+        </div>
+
+        <div class="barFlex">
+            <div id="barRight" class="barRight" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()"></div>
+        </div> 
+
+        <div class="arrowFlex">
+            <h1 class="arrow">→</h1>
+        </div>
+
+        <div class="container" id="sectionone">
+        <h1>Beach Water Quality</h1>
+
+        <button class="button" onclick="buttonFunction()">click</button>
+        <button onclick="myFunctionTwo()">Click me</button>
+     
+
+        <div class="subheaderContainer">
+        <p class="subheader" style="display: none;">Water quality sample results collected by the Department of Health and Mental Hygiene at all New York City Beaches. These water quality results are used by the Department to determine the status (open, advisory, closed) of Beaches.</p>
+        <img class="coney" style="display: none;" src="../project 3.1/assets/Resources/beach.jpg.webp">
+        </div>
+        <!-- <div class="map_index">
+            <ul id="indexListBehind">
+                <li><img src="../project 3.1/assets/Resources/ss_MANHATTAN BEACH.png"></li>
+                <li><img src="../project 3.1/assets/Resources/ss_CEDAR GROVE.png"></li>
+                <li><img src="../project 3.1/assets/Resources/ss_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+                <li><img src="../project 3.1/assets/Resources/bw_WOLFE'S POND PARK.png"></li>
+            </ul>
+        </div> -->
+        <div class="index">
+            <ul id="indexList" onclick="myFunction()">
+                <li id="one"><div class="hovertext"><p class="number">01<span class="firstline"> 220919</span></p> <p>SCHUYLER <span></span>HILL <span></span>CIVIC <span></span>ASSOCIATION</p> <p>JB2209190940-1.2</p> <p>Sample_location: <span></span> Center</p> <p>Bacteria_results: <span></span>9.9</p></div></li>
+                <li><div class="hovertext"><p class="number">02<span class="firstline"> 220912</span></p> <p>SCHUYLER<span></span> HILL <span></span>CIVIC <span></span> ASSOCIATION</p> <p>JB2209120930-1.2</p> <p>Sample_location: <span></span>Center</p> <p>Bacteria_results: <span></span>226</p></div></li>
+                <li><div class="hovertext"><p class="number">03<span class="firstline"> 220908</span></p> <p>CEDAR<span></span> GROVE</p> <p>JA2209081000-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 20</p></div></li>
+                <li><div class="hovertext"><p class="number">04<span class="firstline"> 220908</span></p> <p>MANHATTAN BEACH</p> <p>JA2209081150-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 30</p></div></li>
+                <li><p class="number">05<span class="firstline"> 220908</span></p> <p>WOLFE'S POND PARK</p> <p>JA2209080920-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 443</p></li>
+                <li><p class="number">06<span class="firstline"> 220907</span></p> <p>DANISH AMERICAN BEACH CLUB</p> <p>JA2209070820-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 31</p></li>
+                <li><p class="number">07<span class="firstline"> 220907</span></p> <p>DOUGLASTON HOMEOWNERS ASSOCIATION</p> <p>JA2209070700-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 121</p></li>
+                <li><p class="number">08<span class="firstline"> 220907</span></p> <p>WEST FORDHAM STREET ASSOCIATION</p> <p>JA2209071000-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 281</p></li>
+                <li><p class="number">09<span class="firstline"> 220907</span></p> <p>SCHUYLER HILL CIVIC ASSOCIATION</p> <p>JA2209070750-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 20</p></li>
+                <li><p class="number">10<span class="firstline"> 220907</span></p> <p>ORCHARD BEACH</p> <p>JA2209070915-2.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 743</p></li>
+                <li><p class="number">11<span class="firstline"> 220907</span></p> <p>MORRIS YACHT & BEACH CLUB</p> <p>JA2209071025-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 11199</p></li>
+                <li><p class="number">12<span class="firstline"> 220906</span></p> <p>SOUTH BEACH</p> <p>JB2209060815-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 41</p></li>
+                <li><p class="number">13<span class="firstline"> 220906</span></p> <p>WOLFE'S POND PARK</p> <p>JB2209061040-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 199</p></li>
+                <li><p class="number">14<span class="firstline"> 220906</span></p> <p>CONEY ISLAND W 16 - W 27</p> <p>JA2209061015-5.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 108</p></li>
+                <li><p class="number">15<span class="firstline"> 220906</span></p> <p>CONEY ISLAND W 28 - W 37</p> <p>JA2209061035-6.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 10</p></li>
+                <li><p class="number">16<span class="firstline"> 220906</span></p> <p>CONEY ISLAND BR. 15 - 6</p> <p>JA2209060830-1.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 10</p></li>
+                <li><p class="number">17<span class="firstline"> 220906</span></p> <p>CEDAR GROVE</p> <p>JB2209060955-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 41</p></li>
+                <li><p class="number">18<span class="firstline"> 220906</span></p> <p>CONEY ISLAND OCEAN PKWY - W 8</p> <p>JA2209060930-3.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 20</p></li>
+                <li><p class="number">19<span class="firstline"> 220906</span></p> <p>MIDLAND BEACH</p> <p>JB2209060855-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 52</p></li>
+                <li><p class="number">20<span class="firstline"> 220906</span></p> <p>CONEY ISLAND BR. 6 - OCEAN PKWY</p> <p>JA2209060905-2.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 31</p></li>
+                <li><p class="number">21<span class="firstline"> 220906</span></p> <p>MANHATTAN BEACH</p> <p>JA2209060755-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 175</p></li>
+                <li><p class="number">22<span class="firstline"> 220906</span></p> <p>CONEY ISLAND W 8 - PIER</p> <p>JA2209060955-4.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 109</p></li>
+                <li><p class="number">22<span class="firstline"> 220902</span></p> <p>WOLFE'S POND PARK</p> <p>JB2209021130-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 98</p></li>
+                <li><p class="number">22<span class="firstline"> 220831</span></p> <p>ROCKAWAY BEACH 15 - 22</p> <p>JB2208310855-2.1</p> <p>Sample_location: Center</p> <p>Bacteria_results: 10</p></li>
+                <!-- <li><p class="number">09<span class="firstline"> 220919</span></p> <p>SCHUYLER HILL CIVIC ASSOCIATION</p> <p>JB2209190940-1.2</p> <p>Sample_location: Center</p> <p>Bacteria_results: 9.9</p></li> -->
+                <!-- <li><p class="number">01<span class="firstline"> 220919</span></p> <p class="title"></p> <p class="sampleID"></p> <p class="sampleLocation">Sample_location: Center</p> <p class="bacteriaResults">Bacteria_results: 443</p></li>
+                <li><p class="number">02<span class="firstline"> 220918</span></p> <p class="title"></p> <p class="sampleID"></p> <p class="sampleLocation"></p> <p class="bacteriaResults"></p></li> -->
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="containersectiontwo" style="display: none;">
+            <h2>Manhattan Beach</h2>
+
+            <p>Manhattan Beach was created by real estate developer Austin Corbin (1827-1896) in 1877 as a self-contained summer resort on 500 acres of salt marsh, the eastern peninsula of what was once Coney Island. Visitors stayed at the Oriental Hotel and the Manhattan Beach Hotel and attended concerts by bandmaster John Philip Sousa who composed the Manhattan Beach March, in 1893, to commemorate the resort. Corbin was the president of the Long Island Railroad from 1880 until his death. <br>
+                <br>
+                The opening of amusement parks coupled with the closing of racetracks in 1910, in nearby Coney Island, led to the swift decline of the hotels. Residential development began in the area in 1907, redefining the character of the neighborhood. <span class="textindent"><br>Today, Manhattan Beach, whose streets are arranged in alphabetical order from Amherst to Pembroke and named after places in England, is home to approximately 7,000 people. The land on this site was originally acquired by the Federal Government in 1942 for a Coast Guard and Maritime Training Station. After eight years of negotiations, this 16-acre waterfront property was transferred to New York State. It was turned over to the City for park purposes in 1951. An additional 24.4 acres were acquired in 1954. The park opened to the public on July 15, 1955 and was welcomed as an alternative to the crowded beaches of Coney Island.</span> 
+                <br>
+                The children of Manhattan Beach have had a seaside resort of their own at the Manhattan Beach Playground since it was renovated in 1997 under a $778,000 capital project funded by Borough President Golden and Councilmember Anthony D. Weiner. New features include modular play equipment, benches and shade trees, swings, a water fountain, a sprinkler system, as well as animal art and wrought-iron fencing depicting decorative motifs of ocean and marine life.
+            </p>
+            <!-- <p class="back" onclick="myFunction()">back</p> -->
+        </div>
+    </main>
+    <footer>
+        <p class="back" style="display: none;" onclick="myFunction()">back</p>
+    </footer>
+</body>
+</html>
